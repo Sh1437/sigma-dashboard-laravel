@@ -214,10 +214,17 @@
       <div class="dashboard-content flex min-h-[calc(100vh-55px)] flex-col px-5 pb-5 pt-4">
 
         <!-- WELCOME -->
-        <div class="mb-4">
+        <!-- <div class="mb-4">
           <h2 class="text-[16px] font-extrabold text-slate-800">Selamat datang,</h2>
           <div class="mt-0.5 text-[10px] text-slate-500 dark:text-slate-400">
             Selasa, 01 September 2026 <span class="mx-2">•</span> 08:45 WIB
+          </div>
+        </div> -->
+        <div class="mb-4">
+          <h2 class="text-[16px] font-extrabold text-slate-800">
+            Selamat datang,
+          </h2>
+          <div id="currentDateTime" class="mt-0.5 text-[10px] text-slate-500 dark:text-slate-400">
           </div>
         </div>
 

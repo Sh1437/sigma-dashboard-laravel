@@ -40,6 +40,39 @@ import '../css/app.css';
       applyTheme(nextTheme);
     });
 
+    //Datetime_now
+function updateDateTime() {
+    const now = new Date();
+
+    const tanggal = now.toLocaleDateString('id-ID', {
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+        timeZone: 'Asia/Jakarta'
+    });
+
+    const waktu = now.toLocaleTimeString('id-ID', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZone: 'Asia/Jakarta'
+    });
+
+    const element = document.getElementById('currentDateTime');
+
+    if (element) {
+        element.innerHTML = `${tanggal} <span class="mx-2">•</span> ${waktu} WIB`;
+    }
+}
+
+// Jalankan saat halaman dimuat
+updateDateTime();
+
+// Update setiap detik
+setInterval(updateDateTime, 1000);
+
     // =========================
     // PROFILE DROPDOWN
     // =========================
