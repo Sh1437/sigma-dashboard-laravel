@@ -66,11 +66,7 @@ function updateDateTime() {
         element.innerHTML = `${tanggal} <span class="mx-2">•</span> ${waktu} WIB`;
     }
 }
-
-// Jalankan saat halaman dimuat
 updateDateTime();
-
-// Update setiap detik
 setInterval(updateDateTime, 1000);
 
     // =========================
