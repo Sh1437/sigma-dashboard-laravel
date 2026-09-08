@@ -62,8 +62,12 @@
         <a href="{{ route('dashboard') }}" class="brand-logo-link" aria-label="SIGMA Dashboard">
           <img src="{{ asset('images/sigma-logo-icon2.png') }}" alt="SIGMA" class="brand-logo">
         </a>
-        <div class="text-[18px] font-extrabold tracking-[.18em] leading-none">SIGMA</div>
-        <div class="mt-1 text-[5px] font-semibold tracking-[.17em] text-slate-300">SISTEM REGISTRASI MATERIAL</div>
+        <div class="brand-copy">
+          <div class="text-[18px] font-extrabold tracking-[.18em] leading-none">SIGMA
+          </div>
+          <div class="mt-1 text-[5px] font-semibold tracking-[.17em] text-slate-300">SISTEM REGISTRASI MATERIAL
+          </div>
+        </div>
       </div>
       <div class="sidebar-scroll flex-1 overflow-y-auto px-3 pb-4">
         <nav class="space-y-1">

@@ -267,20 +267,58 @@
       padding-right: 0;
     }
     .brand-logo-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    width: 50px;
-    height: auto;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
     flex-shrink: 0;
-    overflow: visible;
-  }
+
+    /* overflow: hidden; */
+    }
 
     .brand-logo {
     display: block;
-    width: 50px;
-    height: auto;
-    max-width: none;
+
+    width: 42px;
+    height: 42px;
+
     object-fit: contain;
+    }
+
+    .brand-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+}
+
+    .brand-logo {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    max-width: 100%;
+    object-fit: contain;
+    }
+
+    .sidebar.collapsed .brand-logo-link {
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    }
+
+    .sidebar.collapsed .brand-logo {
+    width: 42px;
+    height: 42px;
+    transform: none;
     }
 
     .sidebar.collapsed .sidebar-icon {
@@ -295,18 +333,18 @@
       margin-left: 68px;
     }
 
-    .sidebar.collapsed .brand-logo-link {
+    /* .sidebar.collapsed .brand-logo-link {
     width: 42px;
     height: 42px;
     justify-content: center;
     overflow: hidden;
-    }
+    } */
 
-    .sidebar.collapsed .brand-logo {
+    /* .sidebar.collapsed .brand-logo {
     width: 50px;
     max-width: none;
     transform: translateX(45px);
-    }
+    } */
 
     .sidebar,
     .main {
